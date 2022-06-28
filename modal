@@ -1,0 +1,70 @@
+ <div class="backdrop" data-modal>
+                <div class="modal">
+                    <button class="button-modal" data-modal-close>
+                        <svg class="button-modal-close" width="11" height="11">
+                            <use href="./img/button-modal-close.svg"></use>
+                        </svg>
+                    </button>
+                    <p class="modal-title">
+                        Оставьте свои данные, мы вам перезвоним
+                    </p>
+                    <form class="modal-form">
+                        <label class="modal-label">Имя
+                            <input
+                        type="text"
+                        name="use-name"
+                        class="modal-input"
+                        placeholder="Имя"
+                        required />
+                        </label>
+
+                        <div class="modal-field">
+                        <label class="modal-label" for="user-tel"></label>
+                        <input type="tel"
+                        name="tel"
+                        class="modal-input"
+                        placeholder="tel"
+                        required
+                        minlength="10"
+                        title="+380 (096) 111-11-11"
+                        id="user-tel"
+                        value="+380"
+                        />
+                        </div>
+                    <input type="email"
+                        name="email"
+                        class="modal-input"
+                        placeholder="email"
+                        required>
+                    <textarea name="comment"
+                        rows="5"
+                        placeholder="Введите текст"
+                        required>
+                    </textarea>
+                    <div class="modal-field">
+                        <textarea name="modal-text"
+                        id="modal-text"
+                        cols="30"
+                        rows="10"
+                        class="modal-textarea"
+                        placeholder="Комент"
+                        ></textarea>
+                    </div>
+                    <fieldset>
+                        <legend>Size</legend>
+                        <label for="large">Large</label>
+                        <input type="radio" id="large" name="size" value="large">
+                        <label for="small">Small</label>
+                        <input type="radio" id="small" name="size" value="small">
+                    </fieldset>
+                    <button type="submit" class="button modal-btn">Отправить</button>
+                    </form>
+                </div>
+             </div>
+
+             <!-- ÷паддинг
+             заголовок
+             інпути
+              текстареа
+             іконки поверх інпута, по структурі як виїжджаючий текст
+             спрайт в css не працює -->

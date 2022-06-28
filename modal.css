@@ -1,0 +1,59 @@
+.modal {
+    padding: 40px;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.modal-input {
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.modal-input:not(:placeholder-shown):not(:focus):valid {
+    /* коли placeholder не показаний і не у фокусі, то якщо валідний, то фон... */
+    background-color: aqua;
+}
+
+.modal-input:invalid {
+    /* якщо placeholder не показаний і не у фокусі, але не валідний, то фон... */
+    background-color: blueviolet;
+}
+
+.modal-input:placeholder-shown {
+    background-color: transparent;
+}
+
+.modal-input::placeholder {
+
+}
+
+.modal-btn {
+
+}
+
+.modal-label {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: var(--)
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12p 16px;
+}
