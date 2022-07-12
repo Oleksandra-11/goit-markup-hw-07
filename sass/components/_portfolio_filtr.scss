@@ -1,43 +1,30 @@
-.filtr-buttons {
+.filtr__list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.filtrbutton-list:not(:last-child) {
+.filtr__title {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.filtr__item:not(:last-child) {
     margin-right: 9px;
 }
 
-.ourprojects-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.ourprojects-card:not(:nth-child(3n+3)) {
-    margin-right: var(--primary-margin);
-}
-
-.ourprojects-card:not(:nth-last-child(-n+3)) {
-    margin-bottom: var(--primary-margin);
-}
-
-.ourprojects-img {
-    display: block;
-}
-
-.card {
-    padding: 20px 24px;
-    background-color: var(--primary-light-color);
-}
-
-.filtr-button {
+.filtr__button {
     color: var(--title-text-color);
     background-color: var(--background-ourteam-and-filtrbtn-color);
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
+    @include font(500, 16px, 1.62, null);
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.62;
     text-align: center;
     cursor: pointer;
     border-radius: 4px;
@@ -53,14 +40,5 @@
             0px 1px 2px rgba(0, 0, 0, 0.08),
             0px 2px 2px rgba(0, 0, 0, 0.12);
     }
-}
-
-.filtr-title {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
 }
 

@@ -1,6 +1,8 @@
 
 @import './utils/variables';
 
+@import './utils/mixins';
+
 @import './utils/common';
 
 @import './utils/hidden';
@@ -21,7 +23,7 @@
 
 @import './components/modal';
 
-@import './components/portfolio';
+@import './components/portfolio_filtr';
 
 @import './components/ourprojects';
 
