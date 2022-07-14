@@ -7,7 +7,6 @@
   --background-ourteam-and-filtrbtn-color: #F5F4FA;
   --primary-margin: 30px;
   --primary-padding: 94px;
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 }
 
 body {
@@ -763,18 +762,19 @@ ul {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  align-content: center;
+  display: flex;
+  align-items: center;
 }
 .modal__text a {
   color: var(--accent-color);
 }
 
 .modal__text span {
-  content: "";
   width: 16px;
   height: 15px;
   border: 1px solid rgba(34, 34, 34, 0.2);
   border-radius: 2px;
+  margin-right: 9px;
   display: flex;
   align-items: center;
   justify-content: center;

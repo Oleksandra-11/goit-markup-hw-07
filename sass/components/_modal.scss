@@ -141,7 +141,8 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    align-content: center;
+    display: flex;
+    align-items: center;
 
     a {
             color: var(--accent-color);
@@ -149,15 +150,14 @@
 }
 
 .modal__text span {
-    content: '';
     width: 16px;
     height: 15px;
     border: 1px solid rgba(34, 34, 34, 0.2);
     border-radius: 2px;
+    margin-right: 9px;
     display: flex;
     align-items: center;
     justify-content: center;
-
 
     .modal-check:checked+& {
         background-color: var(--accent-color);
